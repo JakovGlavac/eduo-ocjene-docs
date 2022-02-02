@@ -1,0 +1,33 @@
+import Callout from 'nextra-theme-docs/callout'
+
+# Podaci o ponašanju
+
+## Primjer requesta
+
+<Callout emoji="⚠️">Request u sebi mora imati `epicCookie`</Callout>
+
+`https://eduo-ocjene.fly.dev/api/scrape/behavior/${classID}`
+
+classID dobivamo iz [userInfo-a](/REST/userinfo)
+
+
+## Response
+
+Primjer response-a:
+
+```json
+{
+    "data": [
+        {
+            "title": "Vladanje",
+            "dataText": "Cijela godina:\n                             Uzorno",
+            "linksData": []
+        },
+        {
+            "title": "Pedagoške mjere",
+            "dataText": "Učenik nema pedagoških mjera.",
+            "linksData": []
+        }
+    ]
+}
+```

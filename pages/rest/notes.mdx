@@ -1,0 +1,57 @@
+import Callout from 'nextra-theme-docs/callout'
+
+# Podaci o Bilješkama
+
+## Primjer requesta
+
+<Callout emoji="⚠️">Request u sebi mora imati `epicCookie`</Callout>
+
+`https://eduo-ocjene.fly.dev/api/scrape/notes/${classID}`
+
+classID dobivamo iz [userInfo-a](/REST/userinfo)
+
+## Response
+
+Primjer response-a:
+
+```json
+{
+  "data": [
+    {
+      "title": "Razrednik",
+      "dataText": "Sanja Cvijanović",
+      "linksData": [
+        {
+          "href": "mailto:sanja.cvijanovic1@skole.hr",
+          "text": "sanja.cvijanovic1@skole.hr"
+        }
+      ]
+    },
+    {
+      "title": "Zamjenik razrednika",
+      "dataText": "Martina Jurković",
+      "linksData": [
+        {
+          "href": "mailto:martina.jurkovic3@skole.hr",
+          "text": "martina.jurkovic3@skole.hr"
+        }
+      ]
+    },
+    {
+      "title": "Bilješka razrednika",
+      "dataText": "Bilješka razrednika nije upisana.",
+      "linksData": []
+    },
+    {
+      "title": "Izvanškolske aktivnosti",
+      "dataText": "Učenik nema izvanškolske aktivnosti.",
+      "linksData": []
+    },
+    {
+      "title": "Izvannastavne aktivnosti",
+      "dataText": "Učenik nema izvannastavne aktivnosti.",
+      "linksData": []
+    }
+  ]
+}
+```

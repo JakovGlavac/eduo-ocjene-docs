@@ -1,0 +1,47 @@
+import Callout from 'nextra-theme-docs/callout'
+
+# Predmeti u školskoj godini
+
+## Primjer requesta
+
+<Callout emoji="⚠️">Request u sebi mora imati `epicCookie`</Callout>
+
+`https://eduo-ocjene.fly.dev/api/scrape/subjects/${classID}`
+
+classID dobivamo iz [userInfo-a](/REST/userinfo)
+
+## Response
+
+Primjer response-a:
+
+```json
+{
+  "data": [
+    {
+      "subjectID": "45550263880",
+      "subject": "Hrvatski jezik",
+      "teachersName": "Tin Lemac"
+    },
+    {
+      "subjectID": "45557358120",
+      "subject": "Engleski jezik I",
+      "teachersName": "Sanja Cvijanović"
+    },
+    {
+      "subjectID": "45565335100",
+      "subject": "Politika i gospodarstvo",
+      "teachersName": "Kornelija Grubić-Štefanić"
+    },
+    {
+      "subjectID": "45582732350",
+      "subject": "Tjelesna i zdravstvena kultura",
+      "teachersName": "Martina Jurković"
+    },
+    {
+      "subjectID": "45584460460",
+      "subject": "Etika",
+      "teachersName": "Kornelija Grubić-Štefanić"
+    }
+  ]
+}
+```

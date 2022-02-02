@@ -1,0 +1,44 @@
+import Callout from 'nextra-theme-docs/callout'
+
+# Podaci o izostancima 
+
+
+## Primjer requesta
+
+<Callout emoji="⚠️">Request u sebi mora imati `epicCookie`</Callout>
+
+`https://eduo-ocjene.fly.dev/api/scrape/absent/${classID}`
+
+classID dobivamo iz [userInfo-a](/REST/userinfo)
+
+## Response
+
+Primjer response-a:
+
+```json
+{
+  "data": [
+    {
+      "classNumber": 4,
+      "subject": "Engleski jezik I",
+      "status": "icon-circle red",
+      "description": "Ostalo (Nemar)",
+      "date": 1621468800
+    },
+    {
+      "classNumber": 4,
+      "subject": "Sat razrednika",
+      "status": "icon-circle green",
+      "description": "Ispit (Iz prve pomoći)",
+      "date": 1621296000
+    },
+    {
+      "classNumber": 6,
+      "subject": "Operacijski sustavi",
+      "status": "icon-circle green",
+      "description": "Ispit (Iz prve pomoći)",
+      "date": 1621296000
+    }
+  ]
+}
+```

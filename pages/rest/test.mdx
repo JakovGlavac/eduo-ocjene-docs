@@ -1,0 +1,42 @@
+import Callout from 'nextra-theme-docs/callout'
+
+# Testovi
+
+## Primjer requesta
+
+<Callout emoji="⚠️">Request u sebi mora imati `epicCookie`</Callout>
+
+`https://eduo-ocjene.fly.dev/api/scrape/tests/${classID}`
+
+classID dobivamo iz [userInfo-a](/REST/userinfo)
+
+## Response
+
+Primjer response-a:
+
+```json
+{
+  "data": [
+    {
+      "subject": "Hrvatski jezik",
+      "note": "Hrvatski narodni preporod, I.Mažuranić : Smrt Smail-age Čengića",
+      "date": 1602201600
+    },
+    {
+      "subject": "Matematika",
+      "note": "Pisana provjera znanja - Kut i brojevna kružnica, definicije, svojstva, određivanje vrijednosti trigonometrijskih funkcija",
+      "date": 1602633600
+    },
+    {
+      "subject": "Engleski jezik I",
+      "note": "Vocabulary Test I",
+      "date": 1603411200
+    },
+    {
+      "subject": "Engleski jezik I",
+      "note": "Listening Comprehension Test I",
+      "date": 1605139200
+    }
+  ]
+}
+```
