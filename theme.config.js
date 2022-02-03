@@ -1,3 +1,5 @@
+import Script from 'next/script'
+
 export default {
   // github: 'https://github.com/shuding/nextra',
   // docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master',
@@ -21,21 +23,32 @@ export default {
       <meta name="description" content="API kakvog učenici zaslužuju" />
       <meta name="og:description" content="API kakvog učenici zaslužuju" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://ucarecdn.com/327d1937-a99e-4816-a822-afd626cc11ab" />
+      <meta
+        name="twitter:image"
+        content="https://ucarecdn.com/327d1937-a99e-4816-a822-afd626cc11ab"
+      />
       <meta name="twitter:site:domain" content="ocjene.eduo.help" />
       <meta name="twitter:url" content="https://ocjene.eduo.help" />
       <meta name="og:title" content="eduo eDnevnik API" />
-      <meta name="og:image" content="https://ucarecdn.com/327d1937-a99e-4816-a822-afd626cc11ab" />
+      <meta
+        name="og:image"
+        content="https://ucarecdn.com/327d1937-a99e-4816-a822-afd626cc11ab"
+      />
       <meta name="apple-mobile-web-app-title" content="eduo eDnevnik API" />
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-33341RXW3G"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)}
-        gtag('js', new Date());
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-        gtag('config', 'G-33341RXW3G');
-      </script>
+          gtag('config', 'G-33341RXW3G');
+        `}
+      </Script>
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -65,7 +78,10 @@ export default {
         sizes="16x16"
         href="/favicon-16x16.png"
       />
-      <meta name="msapplication-TileImage" content="https://ucarecdn.com/327d1937-a99e-4816-a822-afd626cc11ab/-/preview/144x144/" />
+      <meta
+        name="msapplication-TileImage"
+        content="https://ucarecdn.com/327d1937-a99e-4816-a822-afd626cc11ab/-/preview/144x144/"
+      />
     </>
   ),
   search: true,
