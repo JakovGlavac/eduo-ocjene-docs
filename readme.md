@@ -1,8 +1,5 @@
 
-# eduo eDnevnik API
-
-
-![alt text](https://ucarecdn.com/327d1937-a99e-4816-a822-afd626cc11ab/)
+# ![alt text](https://ucarecdn.com/ccc57c9d-d666-4605-98f7-9e5da4d1c76f/-/preview/300x300/)
 
 [ocjene.eduo.help](https://ocjene.eduo.help/)
 

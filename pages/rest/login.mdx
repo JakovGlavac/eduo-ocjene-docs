@@ -4,8 +4,6 @@ import Callout from 'nextra-theme-docs/callout'
 
 Kako bi dobili pristup podacima prije svega morate se logirati.
 
-
-
 ```cmd
 curl --location --request GET 'https://ocjene.eduo.help/api/login' \
 --header 'Content-Type: application/json' \
@@ -16,21 +14,29 @@ curl --location --request GET 'https://ocjene.eduo.help/api/login' \
 
 Za login potrebna su 2 parametra: `username` i `password`, njih šaljemo kroz `Body` u `Content-Type: application/json` formatu.
 
+<Callout emoji="⚠️">
+  EDUO NE POHRANJUJE VAŠ PASSWORD U NITI JEDNOM OBLIKU!!!! Password mora biti u
+  plaintextu kako bi se scraper mogao logirati.
+</Callout>
+
 Ako je login uspješan dobit ćete response:
+
 ```json
-{    
-    "LoginSuccessful": true
+{
+  "LoginSuccessful": true
 }
 ```
 
-<Callout emoji="⚠️">Te će taj response imati u sebi `epicCookie` koji se mora koristiti za sve ostale requestove.</Callout>
-
-
+<Callout emoji="⚠️">
+  Te će taj response imati u sebi `epicCookie` koji se mora koristiti za sve
+  ostale requestove.
+</Callout>
 
 Ako nije uspješan dobit ćete response:
+
 ```json
-{    
-    "LoginSuccessful": false
+{
+  "LoginSuccessful": false
 }
 ```
 
