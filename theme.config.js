@@ -18,15 +18,24 @@ export default {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
-      <meta name="description" content="eduo eDnevnik API - API kakvog učenici zaslužuju" />
-      <meta name="og:description" content="eduo eDnevnik API - API kakvog učenici zaslužuju" />
+      <meta name="description" content="API kakvog učenici zaslužuju" />
+      <meta name="og:description" content="API kakvog učenici zaslužuju" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content="https://ucarecdn.com/327d1937-a99e-4816-a822-afd626cc11ab" />
       <meta name="twitter:site:domain" content="ocjene.eduo.help" />
       <meta name="twitter:url" content="https://ocjene.eduo.help" />
-      <meta name="og:title" content="Nextra: Next.js static site generator" />
+      <meta name="og:title" content="eduo eDnevnik API" />
       <meta name="og:image" content="https://ucarecdn.com/327d1937-a99e-4816-a822-afd626cc11ab" />
-      <meta name="apple-mobile-web-app-title" content="Nextra" />
+      <meta name="apple-mobile-web-app-title" content="eduo eDnevnik API" />
+      {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-33341RXW3G"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+
+        gtag('config', 'G-33341RXW3G');
+      </script>
       <link
         rel="apple-touch-icon"
         sizes="180x180"
