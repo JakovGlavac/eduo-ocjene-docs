@@ -1,22 +1,23 @@
-# [Nextra](https://nextra.vercel.app)
 
-_Warning: this project is not production ready, API might change without notice._
+# eduo eDnevnik API
 
-[![](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra&c=1)
 
-**Nextra** is a [Next.js](https://nextjs.org) and [MDX](https://mdxjs.com) powered, no-code site generator.
+![alt text](https://ucarecdn.com/327d1937-a99e-4816-a822-afd626cc11ab/)
 
-![](/public/demo.png)
+[ocjene.eduo.help](https://ocjene.eduo.help/)
 
-## Development
+## Motivacija
 
-The code of Nextra is under the [`core`](https://github.com/shuding/nextra/tree/core) branch.
+Učenik sam 4. razreda što znači da već godinama gledam u očajan UI eDnevnika.
+Iz tog razloga odlučio sam napraviti API kako bi učenici mogli napraviti svoj client za eDnevnik.
 
-## Themes
+Opće je poznato da CARNet ima interni API kojeg daju samo određenim ljudima, u nekoliko navrata kontaktirao sam CARNet i zatražio pristup, no svaki put su me odbili.
 
-- [nextra-theme-docs](https://github.com/vercel/swr-site) ([demo](https://swr.vercel.app))
-- [nextra-theme-blog](https://github.com/shuding/site) ([demo](https://shud.in))
+Uglavnom sada mi više netreba. :)
 
----
+## Cilj
 
-Created by [@shuding](https://github.com/shuding) and [@pacocoursey](https://github.com/pacocoursey) at [Vercel](https://vercel.com). Released under the MIT license.
+Kao što je cilj eduo-a "Učiniti školstvo great again", tako je cilj i ovog API-a
+vratiti moć u ruke učenika. Tako da ako netko želi može napravit nešto što će možda biti korisno, ne samo njemu već i drugima.
+
+
