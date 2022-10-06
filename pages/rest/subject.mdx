@@ -11,14 +11,14 @@ import Callout from 'nextra-theme-docs/callout'
 subjectID dobivamo iz [subjects-a](/REST/subjects)
 
 <Callout emoji="⚠️">Bitno!</Callout>
-Kod dobivanja ocjena iz predmeta moramo prije requesta za ocjene napraviti request za taj razred, tj. ukoliko uzmemo subjectID za proslogodisnji razred i pozovemo https://ocjene.eduo.help/api/scrape/subject/${subjectID} sa tim subjectID-jem dobiti cemo ovo:
+Kod dobivanja ocjena iz predmeta moramo prije requesta za ocjene napraviti request za taj razred, tj. ukoliko uzmemo subjectID za proslogodisnji razred i pozovemo `https://ocjene.eduo.help/api/scrape/subject/${subjectID}` sa tim subjectID-jem dobiti cemo ovo:
 ```json
 {
     "data": [ ]
 }
 ```
-da bismo dobili data moramo prvo pozvat https://ocjene.eduo.help/api/scrape/class/${classID} sa classID-em od proslogodisnjeg razreda.
-Isto tako ako zelimo nakon ovog requesta accesat ocjene iz nekog ovogodisnjeg predmeta moramo opet callat https://ocjene.eduo.help/api/scrape/class/${classID} sa classID-em ovogodisnjeg razreda.
+da bismo dobili data moramo prvo pozvat `https://ocjene.eduo.help/api/scrape/class/${classID}` sa classID-em od proslogodisnjeg razreda.
+Isto tako ako zelimo nakon ovog requesta accesat ocjene iz nekog ovogodisnjeg predmeta moramo opet callat `https://ocjene.eduo.help/api/scrape/class/${classID}` sa classID-em ovogodisnjeg razreda.
 
 ## Response
 
