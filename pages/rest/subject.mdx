@@ -10,38 +10,51 @@ import Callout from 'nextra-theme-docs/callout'
 
 subjectID dobivamo iz [subjects-a](/REST/subjects)
 
+<Callout emoji="⚠️">Bitno!</Callout>
+Kod dobivanja ocjena iz predmeta moramo prije requesta za ocjene napraviti request za taj razred, tj. ukoliko uzmemo subjectID za proslogodisnji razred i pozovemo https://ocjene.eduo.help/api/scrape/subject/${subjectID} sa tim subjectID-jem dobiti cemo ovo:
+```json
+{
+    "data": [ ]
+}
+```
+da bismo dobili data moramo prvo pozvat https://ocjene.eduo.help/api/scrape/class/${classID} sa classID-em od proslogodisnjeg razreda.
+Isto tako ako zelimo nakon ovog requesta accesat ocjene iz nekog ovogodisnjeg predmeta moramo opet callat https://ocjene.eduo.help/api/scrape/class/${classID} sa classID-em ovogodisnjeg razreda.
+
 ## Response
 
 Primjer response-a:
 
 ```json
 {
-  "data": [
-    {
-      "subjectID": "45550263880",
-      "subject": "Hrvatski jezik",
-      "teachersName": "Tin Lemac"
-    },
-    {
-      "subjectID": "45557358120",
-      "subject": "Engleski jezik I",
-      "teachersName": "Sanja Cvijanović"
-    },
-    {
-      "subjectID": "45565335100",
-      "subject": "Politika i gospodarstvo",
-      "teachersName": "Kornelija Grubić-Štefanić"
-    },
-    {
-      "subjectID": "45582732350",
-      "subject": "Tjelesna i zdravstvena kultura",
-      "teachersName": "Martina Jurković"
-    },
-    {
-      "subjectID": "45584460460",
-      "subject": "Etika",
-      "teachersName": "Kornelija Grubić-Štefanić"
-    }
-  ]
+    "data": [
+        {
+            "note": "PPT - Il triangolo delle Bermuda",
+            "date": 1654041600,
+            "grade": "5",
+            "ed_id": "528122586590",
+            "field": "govorenje"
+        },
+        {
+            "note": "Pisanje",
+            "date": 1651622400,
+            "grade": "4",
+            "ed_id": "520859977570",
+            "field": "pisanje"
+        },
+        {
+            "note": "Čitanje s razumijevanjem - 89%",
+            "date": 1649203200,
+            "grade": "4",
+            "ed_id": "516944846900",
+            "field": "čitanje s razumijevanjem"
+        },
+        {
+            "note": "Pisanje srednje dugog teksta - 95%",
+            "date": 1639526400,
+            "grade": "5",
+            "ed_id": "487766773080",
+            "field": "pisanje"
+        }
+    ]
 }
 ```
